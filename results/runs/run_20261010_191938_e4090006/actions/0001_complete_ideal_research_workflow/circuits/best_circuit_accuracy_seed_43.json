@@ -1,0 +1,87 @@
+{
+  "mode": "accuracy",
+  "seed": 43,
+  "random_seed_used": 43,
+  "genome": [
+    {
+      "gate": "CNOT",
+      "q": 0,
+      "target": 1
+    },
+    {
+      "gate": "RY",
+      "q": 3,
+      "feature": 0,
+      "scale": 1.0
+    },
+    {
+      "gate": "RZ",
+      "q": 2,
+      "feature": 1,
+      "scale": 2.0
+    },
+    {
+      "gate": "RX",
+      "q": 3,
+      "feature": 0,
+      "scale": 0.5
+    },
+    {
+      "gate": "RY",
+      "q": 1,
+      "feature": 1,
+      "scale": 0.5
+    },
+    {
+      "gate": "RY",
+      "q": 2,
+      "feature": 3,
+      "scale": 1.0
+    },
+    {
+      "gate": "RY",
+      "q": 0,
+      "feature": 0,
+      "scale": 2.0
+    }
+  ],
+  "selection_metrics": {
+    "validation_accuracy": 0.9736842105263158,
+    "validation_balanced_accuracy": 0.9642857142857143,
+    "validation_f1_macro": 0.9712773998488284,
+    "validation_class0_precision": 1.0,
+    "validation_class0_recall": 0.9285714285714286,
+    "validation_class1_recall": 1.0,
+    "validation_malignant_precision": 1.0,
+    "validation_malignant_recall": 0.9285714285714286,
+    "validation_benign_recall": 1.0,
+    "fitness": 0.9736842105263158,
+    "mode": "accuracy",
+    "gate_count": 11,
+    "single_qubit_gate_count": 10,
+    "two_qubit_gate_count": 1,
+    "estimated_depth": 3
+  },
+  "test_metrics_after_selection": {
+    "test_accuracy": 0.9210526315789473,
+    "test_balanced_accuracy": 0.8999344906649198,
+    "test_f1_macro": 0.912836632401665,
+    "test_class0_precision": 0.9722222222222222,
+    "test_class0_recall": 0.813953488372093,
+    "test_class1_recall": 0.9859154929577465,
+    "test_malignant_precision": 0.9722222222222222,
+    "test_malignant_recall": 0.813953488372093,
+    "test_benign_recall": 0.9859154929577465
+  },
+  "complexity": {
+    "gate_count": 11,
+    "single_qubit_gate_count": 10,
+    "two_qubit_gate_count": 1,
+    "estimated_depth": 3
+  },
+  "n_train_for_selection": 341,
+  "n_validation_for_selection": 114,
+  "n_test": 114,
+  "fit_size_for_final_test": 455,
+  "warning": "The test partition was not used during selection; it is evaluated only after the circuit was selected using validation data."
+}

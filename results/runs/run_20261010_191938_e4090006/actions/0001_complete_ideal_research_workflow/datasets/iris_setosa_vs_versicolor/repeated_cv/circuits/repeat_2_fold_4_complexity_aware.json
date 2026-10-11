@@ -1,0 +1,89 @@
+{
+  "repeat": 2,
+  "fold": 4,
+  "mode": "complexity_aware",
+  "search_seed": 52301,
+  "genome": [
+    {
+      "gate": "RZ",
+      "q": 3,
+      "feature": 0,
+      "scale": 0.5
+    },
+    {
+      "gate": "RX",
+      "q": 0,
+      "feature": 0,
+      "scale": 0.5
+    },
+    {
+      "gate": "RY",
+      "q": 1,
+      "feature": 2,
+      "scale": 2.0
+    },
+    {
+      "gate": "CZ",
+      "q": 0,
+      "target": 3
+    },
+    {
+      "gate": "RX",
+      "q": 3,
+      "feature": 2,
+      "scale": 0.5
+    }
+  ],
+  "selection_metrics": {
+    "validation_accuracy": 1.0,
+    "validation_balanced_accuracy": 1.0,
+    "validation_f1_macro": 1.0,
+    "validation_class0_precision": 1.0,
+    "validation_class0_recall": 1.0,
+    "validation_class1_recall": 1.0,
+    "validation_malignant_precision": 1.0,
+    "validation_malignant_recall": 1.0,
+    "validation_benign_recall": 1.0,
+    "gate_count": 9,
+    "single_qubit_gate_count": 8,
+    "two_qubit_gate_count": 1,
+    "estimated_depth": 4,
+    "validation_selection_score": 1.0,
+    "fitness": 0.9808333333333333,
+    "mode": "complexity_aware",
+    "best_validation_balanced_accuracy_seen": 1.0,
+    "validation_balanced_accuracy_loss_from_best": 0.0,
+    "accuracy_constraint_tolerance": 0.02,
+    "accuracy_constraint_applicable": true,
+    "accuracy_constraint_met": true,
+    "selection_rule": "minimum two-qubit gates, then depth, then total gates among evaluated candidates with validation balanced accuracy >= best observed - 0.020",
+    "candidate_budget_nominal": 64,
+    "candidate_budget_unit": "nominal_population_slots",
+    "candidate_attempt_budget_nominal": 64,
+    "candidate_attempts": 64,
+    "candidate_unique_budget_target": 47,
+    "matched_to_model": "",
+    "unique_budget_matched": true,
+    "unique_candidates_evaluated": 47,
+    "search_elapsed_seconds": 2.470185074955225
+  },
+  "complexity": {
+    "gate_count": 9,
+    "single_qubit_gate_count": 8,
+    "two_qubit_gate_count": 1,
+    "estimated_depth": 4
+  },
+  "outer_test_used_during_selection": false,
+  "fitness_definition": "minimum two-qubit gates, then depth, then total gates among evaluated candidates with validation balanced accuracy >= best observed - 0.020",
+  "candidate_budget_nominal": 64,
+  "candidate_attempt_budget_nominal": 64,
+  "candidate_attempt_safety_cap": null,
+  "candidate_attempts": 64,
+  "candidate_unique_budget_target": 47,
+  "unique_candidates_evaluated": 47,
+  "matched_to_model": "",
+  "unique_budget_matched": true,
+  "search_elapsed_seconds": 2.470185074955225,
+  "accuracy_constraint_tolerance": 0.02,
+  "accuracy_constraint_met": true
+}

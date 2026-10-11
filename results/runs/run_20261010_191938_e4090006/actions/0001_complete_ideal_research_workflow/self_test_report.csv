@@ -1,0 +1,16 @@
+test,passed
+qiskit_rx_unitary,True
+qiskit_ry_unitary,True
+qiskit_rz_unitary,True
+qiskit_h_unitary,True
+qiskit_cx_circuit_unitary,True
+qiskit_feature_map_returns_normalized_states,True
+qiskit_batch_wrapper_matches_scalar_statevector,True
+evolved_qiskit_circuit_returns_normalized_states,True
+fidelity_kernel_symmetric,True
+fidelity_kernel_diagonal_one,True
+fidelity_kernel_bounded,True
+finite_shot_matrix_symmetric,True
+finite_shot_diagonal_one,True
+genome_complexity_matches_qiskit_structure,True
+circuit_builder_returns_quantum_circuit,True

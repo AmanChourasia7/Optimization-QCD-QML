@@ -1,0 +1,37 @@
+{
+  "dataset": "Breast Cancer Wisconsin Diagnostic (scikit-learn built-in)",
+  "original_samples": 569,
+  "original_features": 30,
+  "quantum_qubits": 4,
+  "split": {
+    "train": 341,
+    "validation": 114,
+    "test": 114
+  },
+  "class_names_by_label": {
+    "0": "malignant",
+    "1": "benign"
+  },
+  "positive_class_for_malignancy_metrics": "malignant (label 0)",
+  "pca_explained_variance_ratio": [
+    0.44983607919943663,
+    0.19319324806385044,
+    0.08900250450238133,
+    0.06675160786769982
+  ],
+  "pca_total_explained_variance_ratio": 0.7987834396333683,
+  "random_state": 42,
+  "preprocessing": [
+    "Stratified 60/20/20 split",
+    "Raw features retained for full-feature classical references",
+    "StandardScaler and PCA fitted on training data only",
+    "PCA scores retained for controlled four-feature classical baselines",
+    "Quantum angles scaled using training-only PCA score ranges; validation/test values are not clipped"
+  ],
+  "feature_views": {
+    "X_*_raw": "Original 30 features for practical classical references",
+    "X_*_pca": "Four PCA scores for a feature-matched classical comparison",
+    "X_*": "Four PCA scores mapped to rotation angles for Qiskit QuantumCircuit feature maps"
+  },
+  "schema_version": 2
+}

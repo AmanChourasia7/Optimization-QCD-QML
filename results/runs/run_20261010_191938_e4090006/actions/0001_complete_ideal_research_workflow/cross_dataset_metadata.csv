@@ -1,0 +1,7 @@
+dataset_id,dataset_name,task_description,class0_name,class1_name,source,n_samples,n_features,class_counts,n_class0,n_class1
+breast_cancer,Breast Cancer Wisconsin Diagnostic,malignant (class 0) versus benign (class 1),Malignant,Benign,scikit-learn built-in load_breast_cancer; no external download,569,30,"{'0': 212, '1': 357}",212,357
+iris_setosa_vs_versicolor,Iris (setosa vs. versicolor),Iris setosa (class 0) versus Iris versicolor (class 1); virginica excluded,Setosa,Versicolor,scikit-learn built-in load_iris; no external download,100,4,"{'0': 50, '1': 50}",50,50
+wine_class0_vs_rest,Wine (class 0 vs. classes 1/2),wine cultivar class 0 (class 0) versus cultivars 1 and 2 (class 1),Wine class 0,Wine classes 1/2,scikit-learn built-in load_wine; no external download,178,13,"{'0': 59, '1': 119}",59,119
+digits_0_vs_1,Handwritten digits (0 vs. 1),handwritten digit 0 (class 0) versus handwritten digit 1 (class 1); other digits excluded,Digit 0,Digit 1,scikit-learn built-in load_digits; no external download,360,64,"{'0': 178, '1': 182}",178,182
+digits_3_vs_8,Handwritten digits (3 vs. 8),handwritten digit 3 (class 0) versus handwritten digit 8 (class 1); other digits excluded,Digit 3,Digit 8,scikit-learn built-in load_digits; no external download,357,64,"{'0': 183, '1': 174}",183,174
+digits_4_vs_9,Handwritten digits (4 vs. 9),handwritten digit 4 (class 0) versus handwritten digit 9 (class 1); other digits excluded,Digit 4,Digit 9,scikit-learn built-in load_digits; no external download,361,64,"{'0': 181, '1': 180}",181,180

@@ -1,0 +1,3 @@
+model,n_train,n_test,shots_per_kernel_entry,accuracy,balanced_accuracy,f1_macro,train_kernel_rmse_vs_ideal,test_kernel_rmse_vs_ideal
+ideal_statevector,24,16,0,0.75,0.75,0.746031746031746,0.0,0.0
+noisy_aer,24,16,512,0.75,0.75,0.746031746031746,0.027630045604516477,0.028744175121516877

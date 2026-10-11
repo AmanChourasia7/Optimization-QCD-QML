@@ -1,0 +1,24 @@
+{
+  "dataset_ids": [
+    "breast_cancer",
+    "iris_setosa_vs_versicolor",
+    "wine_class0_vs_rest",
+    "digits_0_vs_1",
+    "digits_3_vs_8",
+    "digits_4_vs_9"
+  ],
+  "dataset_count": 6,
+  "repeats_per_dataset": 3,
+  "folds_per_repeat": 5,
+  "selected_methods_per_fold": [
+    "performance",
+    "complexity_aware",
+    "random_search_performance",
+    "random_search_complexity_aware"
+  ],
+  "expected_fold_selected_circuit_count": 360,
+  "valid_saved_fold_selected_circuit_count": 360,
+  "missing_or_invalid_genome_json_count": 0,
+  "missing_or_invalid_genome_json_paths": [],
+  "definition": "One selected genome per dataset/repeat/fold/method; this does not count every individual circuit evaluated inside the GA/random-search candidate pool."
+}

@@ -1,0 +1,139 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "breast_cancer",
+      "dataset_name": "Breast Cancer Wisconsin Diagnostic",
+      "task_description": "malignant (class 0) versus benign (class 1)",
+      "class0_name": "Malignant",
+      "class1_name": "Benign",
+      "source": "scikit-learn built-in load_breast_cancer; no external download",
+      "n_samples": 569,
+      "n_features": 30,
+      "class_counts": {
+        "0": 212,
+        "1": 357
+      },
+      "n_class0": 212,
+      "n_class1": 357
+    },
+    {
+      "dataset_id": "iris_setosa_vs_versicolor",
+      "dataset_name": "Iris (setosa vs. versicolor)",
+      "task_description": "Iris setosa (class 0) versus Iris versicolor (class 1); virginica excluded",
+      "class0_name": "Setosa",
+      "class1_name": "Versicolor",
+      "source": "scikit-learn built-in load_iris; no external download",
+      "n_samples": 100,
+      "n_features": 4,
+      "class_counts": {
+        "0": 50,
+        "1": 50
+      },
+      "n_class0": 50,
+      "n_class1": 50
+    },
+    {
+      "dataset_id": "wine_class0_vs_rest",
+      "dataset_name": "Wine (class 0 vs. classes 1/2)",
+      "task_description": "wine cultivar class 0 (class 0) versus cultivars 1 and 2 (class 1)",
+      "class0_name": "Wine class 0",
+      "class1_name": "Wine classes 1/2",
+      "source": "scikit-learn built-in load_wine; no external download",
+      "n_samples": 178,
+      "n_features": 13,
+      "class_counts": {
+        "0": 59,
+        "1": 119
+      },
+      "n_class0": 59,
+      "n_class1": 119
+    },
+    {
+      "dataset_id": "digits_0_vs_1",
+      "dataset_name": "Handwritten digits (0 vs. 1)",
+      "task_description": "handwritten digit 0 (class 0) versus handwritten digit 1 (class 1); other digits excluded",
+      "class0_name": "Digit 0",
+      "class1_name": "Digit 1",
+      "source": "scikit-learn built-in load_digits; no external download",
+      "n_samples": 360,
+      "n_features": 64,
+      "class_counts": {
+        "0": 178,
+        "1": 182
+      },
+      "n_class0": 178,
+      "n_class1": 182
+    },
+    {
+      "dataset_id": "digits_3_vs_8",
+      "dataset_name": "Handwritten digits (3 vs. 8)",
+      "task_description": "handwritten digit 3 (class 0) versus handwritten digit 8 (class 1); other digits excluded",
+      "class0_name": "Digit 3",
+      "class1_name": "Digit 8",
+      "source": "scikit-learn built-in load_digits; no external download",
+      "n_samples": 357,
+      "n_features": 64,
+      "class_counts": {
+        "0": 183,
+        "1": 174
+      },
+      "n_class0": 183,
+      "n_class1": 174
+    },
+    {
+      "dataset_id": "digits_4_vs_9",
+      "dataset_name": "Handwritten digits (4 vs. 9)",
+      "task_description": "handwritten digit 4 (class 0) versus handwritten digit 9 (class 1); other digits excluded",
+      "class0_name": "Digit 4",
+      "class1_name": "Digit 9",
+      "source": "scikit-learn built-in load_digits; no external download",
+      "n_samples": 361,
+      "n_features": 64,
+      "class_counts": {
+        "0": 181,
+        "1": 180
+      },
+      "n_class0": 181,
+      "n_class1": 180
+    }
+  ],
+  "outer_cv": "Repeated stratified 5-fold CV x 3 repeats per dataset",
+  "preprocessing": "Scaler, PCA and angle scaling fitted on inner training partitions only, separately per outer fold",
+  "primary_metrics": [
+    "pooled_test_balanced_accuracy",
+    "pooled_test_f1_macro",
+    "pooled_test_class0_recall"
+  ],
+  "primary_method_comparison": "accuracy-constrained genetic algorithm minus matched accuracy-constrained random search",
+  "primary_complexity_outcomes": [
+    "two_qubit_gate_count",
+    "estimated_depth",
+    "gate_count",
+    "test_balanced_accuracy"
+  ],
+  "multiplicity_correction": "Holm adjustment across 24 prespecified dataset-by-outcome tests; other comparisons exploratory.",
+  "protocol_version": "multidataset-v5-hard-pairs-corrected-inference",
+  "complexity_selection_constraint": {
+    "metric": "inner-validation balanced accuracy",
+    "absolute_tolerance_below_best_candidate": 0.02,
+    "selection_priority": [
+      "minimize two-qubit gates",
+      "minimize estimated depth",
+      "minimize total gates",
+      "maximize validation balanced accuracy",
+      "maximize validation macro-F1"
+    ]
+  },
+  "search_budget": {
+    "population_size": 8,
+    "generations": 8,
+    "nominal_candidate_attempts_per_ga_search": 64,
+    "random_search_budget_matching": "unique candidate circuit evaluations matched exactly to corresponding GA count where candidate space allows; attempt counts are separately recorded"
+  },
+  "paired_comparisons": "QML methods compared with all eight fixed classical baselines using paired sample-cluster bootstrap confidence intervals for accuracy, balanced accuracy, macro-F1 and class-0 recall.",
+  "supplemental_accuracy_uncertainty": "Wilson score intervals for one majority-vote prediction per unique sample are reported separately from pooled repeated-CV sample-cluster bootstrap intervals.",
+  "runtime_reporting": "Wall-clock seconds per search/method on the executing machine; not a quantum hardware timing estimate.",
+  "qiskit_local_only": true,
+  "remote_jobs_submitted": 0,
+  "interpretation_note": "These are 6 binary benchmark tasks derived from built-in scikit-learn datasets. Digit and Iris tasks are restricted to stated class pairs; wine uses class 0 versus classes 1/2. Dataset results must be interpreted separately, not pooled as if observations were interchangeable."
+}

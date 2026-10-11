@@ -1,0 +1,6 @@
+component_or_measure,mean_across_folds,sd_across_folds,n_outer_folds
+cumulative_explained_variance,1.0,1.7045242408169924e-16,15
+pc1_explained_variance,0.7630370291469625,0.014097250850641967,15
+pc2_explained_variance,0.19984877187939867,0.012113959564848674,15
+pc3_explained_variance,0.03289377734566931,0.0033636624603733717,15
+pc4_explained_variance,0.004220421627969687,0.0006001832914029271,15

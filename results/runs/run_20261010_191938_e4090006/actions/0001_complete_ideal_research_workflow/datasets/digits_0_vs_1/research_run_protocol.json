@@ -1,0 +1,15 @@
+{
+  "protocol_version": "multidataset-v5-hard-pairs-corrected-inference",
+  "dataset_id": "digits_0_vs_1",
+  "cv_splits": 5,
+  "cv_repeats": 3,
+  "ga_population_size": 8,
+  "ga_generations": 8,
+  "nominal_search_candidate_budget": 64,
+  "complexity_selection_rule": "minimize two-qubit gates, then estimated depth, then gate count, among evaluated candidates within the fixed inner-validation balanced-accuracy tolerance",
+  "matched_random_complexity_baseline": true,
+  "random_search_candidate_budget_unit": "unique circuit evaluations matched to paired GA within fold",
+  "paired_classical_comparisons": "all original-feature and PCA-4 classical baselines",
+  "supplemental_perfect_accuracy_interval": "unique-sample majority vote Wilson score interval",
+  "balanced_accuracy_tolerance": 0.02
+}

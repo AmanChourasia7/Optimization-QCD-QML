@@ -1,0 +1,11 @@
+{
+  "project": "Optimization of Quantum Circuit Designs Using Quantum Machine Learning",
+  "workflow": "complete_ideal_research_then_noisy_simulation",
+  "created_at": "2026-10-10T19:19:38",
+  "outputs_root": "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs",
+  "stages": [
+    "Complete local ideal Statevector research workflow across six binary datasets",
+    "Noisy Aer kernel experiment using the newly evolved circuit where available"
+  ],
+  "run_isolation": "Every invocation gets a unique folder, and, workspace and cache are run-specific."
+}

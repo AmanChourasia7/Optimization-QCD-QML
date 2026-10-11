@@ -1,0 +1,27 @@
+{
+  "noisy_train_kernel": {
+    "shots_per_kernel_entry": 512,
+    "circuit_pairs_simulated": 276,
+    "symmetric_kernel": true,
+    "kernel_shape": [
+      24,
+      24
+    ],
+    "diagonal_handling": "fixed to 1 by convention for the symmetric training kernel",
+    "elapsed_seconds": 249.74406899884343,
+    "seed": 42
+  },
+  "noisy_test_kernel": {
+    "shots_per_kernel_entry": 512,
+    "circuit_pairs_simulated": 384,
+    "symmetric_kernel": false,
+    "kernel_shape": [
+      16,
+      24
+    ],
+    "diagonal_handling": "fixed to 1 by convention for the symmetric training kernel",
+    "elapsed_seconds": 197.50332054495811,
+    "seed": 43
+  },
+  "interpretation": "Exploratory sampled-kernel classification on a balanced subsample. The noise model is synthetic, not calibrated to a specific device, and these results are not part of the original ideal repeated-CV study."
+}

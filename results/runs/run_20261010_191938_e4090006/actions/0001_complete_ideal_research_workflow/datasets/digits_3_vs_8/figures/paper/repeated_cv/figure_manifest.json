@@ -1,0 +1,72 @@
+{
+  "created_at": "2026-10-10T21:09:22",
+  "analysis": "Repeated stratified 5-fold outer CV x 3 repeats; inner train/validation split for model/circuit selection",
+  "no_remote_jobs": true,
+  "figures": [
+    {
+      "stem": "cv_fig1_balanced_accuracy_ci",
+      "caption": "Figure 1. Balanced accuracy measured on pooled outer-fold predictions from repeated stratified five-fold cross-validation. Error bars show 95% sample-cluster bootstrap confidence intervals that keep repeated predictions for each sample together.",
+      "files": [
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig1_balanced_accuracy_ci.pdf",
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig1_balanced_accuracy_ci.png"
+      ]
+    },
+    {
+      "stem": "cv_fig2_classification_metrics",
+      "caption": "Figure 2. Balanced accuracy, macro-F1, and recall for class 0 (Digit 3) on repeated outer-fold predictions for Handwritten digits (3 vs. 8). Error bars are 95% sample-cluster bootstrap confidence intervals.",
+      "files": [
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig2_classification_metrics.pdf",
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig2_classification_metrics.png"
+      ]
+    },
+    {
+      "stem": "cv_fig3_evolution_fold_stability",
+      "caption": "Figure 3. Fold-level held-out balanced accuracy for two evolutionary objectives and their candidate-budget-matched random-search controls. Each point represents one outer test partition; test labels are used only for evaluation, not for circuit selection.",
+      "files": [
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig3_evolution_fold_stability.pdf",
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig3_evolution_fold_stability.png"
+      ]
+    },
+    {
+      "stem": "cv_fig4_accuracy_complexity_tradeoff",
+      "caption": "Figure 4. Outer-fold balanced accuracy versus logical circuit depth for evolved and random-search circuits. Circle size is proportional to the number of two-qubit gates; diamonds show method means. These are logical circuit metrics, not transpiled hardware cost or measured hardware performance.",
+      "files": [
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig4_accuracy_complexity_tradeoff.pdf",
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig4_accuracy_complexity_tradeoff.png"
+      ]
+    },
+    {
+      "stem": "cv_fig5_validation_vs_outer_test",
+      "caption": "Figure 5. Inner validation balanced accuracy versus held-out outer-test balanced accuracy for evolved and random-search circuits. The plot diagnoses selection optimism; the outer-test values were not used to choose the circuit.",
+      "files": [
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig5_validation_vs_outer_test.pdf",
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig5_validation_vs_outer_test.png"
+      ]
+    },
+    {
+      "stem": "cv_fig6_confusion_matrices",
+      "caption": "Figure 6. Row-normalized confusion matrices pooled over out-of-fold predictions from all repeats for two pre-specified reference models: full-feature logistic regression and the complexity-aware evolved QML circuit. Values are benchmark results, not clinical validation.",
+      "files": [
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig6_confusion_matrices.pdf",
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig6_confusion_matrices.png"
+      ]
+    },
+    {
+      "stem": "cv_fig7_paired_difference_vs_classical",
+      "caption": "Figure 7. Paired sample-cluster bootstrap differences in outer-fold balanced accuracy relative to full-feature logistic regression. Intervals crossing zero do not establish a difference at the corresponding nominal confidence level; repeated-CV observations are clustered by sample.",
+      "files": [
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig7_paired_difference_vs_classical.pdf",
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig7_paired_difference_vs_classical.png"
+      ]
+    },
+    {
+      "stem": "cv_fig8_pca_variance_stability",
+      "caption": "Figure 8. Mean variance explained by each of the four PCA components across inner-training partitions, with fold-to-fold standard deviations. These components are fitted independently within each fold to avoid test-data leakage.",
+      "files": [
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig8_pca_variance_stability.pdf",
+        "/home/jovyan/work/circuits/quantum_circuit_qml_fixed/results/runs/run_20261010_191938_e4090006/actions/0001_complete_ideal_research_workflow/datasets/digits_3_vs_8/figures/paper/repeated_cv/cv_fig8_pca_variance_stability.png"
+      ]
+    }
+  ],
+  "figure_count": 8
+}

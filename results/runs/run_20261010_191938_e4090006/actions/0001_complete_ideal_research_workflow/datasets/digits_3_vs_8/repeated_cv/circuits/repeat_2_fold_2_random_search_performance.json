@@ -1,0 +1,106 @@
+{
+  "repeat": 2,
+  "fold": 2,
+  "mode": "random_search_performance",
+  "search_seed": 52102,
+  "genome": [
+    {
+      "gate": "RY",
+      "q": 3,
+      "feature": 2,
+      "scale": 0.5
+    },
+    {
+      "gate": "RY",
+      "q": 0,
+      "feature": 0,
+      "scale": 1.0
+    },
+    {
+      "gate": "RZ",
+      "q": 1,
+      "feature": 1,
+      "scale": 0.5
+    },
+    {
+      "gate": "CZ",
+      "q": 2,
+      "target": 3
+    },
+    {
+      "gate": "RX",
+      "q": 0,
+      "feature": 1,
+      "scale": 1.0
+    },
+    {
+      "gate": "CZ",
+      "q": 0,
+      "target": 2
+    },
+    {
+      "gate": "CZ",
+      "q": 1,
+      "target": 3
+    },
+    {
+      "gate": "RX",
+      "q": 3,
+      "feature": 2,
+      "scale": 1.0
+    }
+  ],
+  "selection_metrics": {
+    "validation_accuracy": 0.9583333333333334,
+    "validation_balanced_accuracy": 0.9594594594594594,
+    "validation_f1_macro": 0.9583252942311402,
+    "validation_class0_precision": 1.0,
+    "validation_class0_recall": 0.918918918918919,
+    "validation_class1_recall": 1.0,
+    "validation_malignant_precision": 1.0,
+    "validation_malignant_recall": 0.918918918918919,
+    "validation_benign_recall": 1.0,
+    "gate_count": 12,
+    "single_qubit_gate_count": 9,
+    "two_qubit_gate_count": 3,
+    "estimated_depth": 5,
+    "validation_selection_score": 0.9588923768452998,
+    "fitness": 0.9588923768452998,
+    "mode": "random_search_performance",
+    "best_validation_balanced_accuracy_seen": 0.9594594594594594,
+    "validation_balanced_accuracy_loss_from_best": 0.0,
+    "accuracy_constraint_tolerance": 0.02,
+    "accuracy_constraint_applicable": false,
+    "accuracy_constraint_met": null,
+    "selection_rule": "highest 0.5*validation balanced accuracy + 0.5*validation macro-F1 among matched random candidate pool",
+    "candidate_budget_nominal": 64,
+    "candidate_budget_unit": "nominal_attempt_reference; unique budget matched to paired GA",
+    "candidate_attempt_budget_nominal": null,
+    "candidate_attempt_safety_cap": 980,
+    "candidate_attempts": 49,
+    "candidate_unique_budget_target": 49,
+    "matched_to_model": "genetic_algorithm_performance",
+    "unique_budget_matched": true,
+    "unique_candidates_evaluated": 49,
+    "search_elapsed_seconds": 28.699121546000242
+  },
+  "complexity": {
+    "gate_count": 12,
+    "single_qubit_gate_count": 9,
+    "two_qubit_gate_count": 3,
+    "estimated_depth": 5
+  },
+  "outer_test_used_during_selection": false,
+  "fitness_definition": "highest 0.5*validation balanced accuracy + 0.5*validation macro-F1 among matched random candidate pool",
+  "candidate_budget_nominal": 64,
+  "candidate_attempt_budget_nominal": null,
+  "candidate_attempt_safety_cap": 980,
+  "candidate_attempts": 49,
+  "candidate_unique_budget_target": 49,
+  "unique_candidates_evaluated": 49,
+  "matched_to_model": "genetic_algorithm_performance",
+  "unique_budget_matched": true,
+  "search_elapsed_seconds": 28.699121546000242,
+  "accuracy_constraint_tolerance": 0.02,
+  "accuracy_constraint_met": null
+}

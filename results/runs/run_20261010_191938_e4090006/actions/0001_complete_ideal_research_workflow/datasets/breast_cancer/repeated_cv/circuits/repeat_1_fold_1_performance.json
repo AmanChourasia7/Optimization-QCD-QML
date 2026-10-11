@@ -1,0 +1,106 @@
+{
+  "repeat": 1,
+  "fold": 1,
+  "mode": "performance",
+  "search_seed": 42000,
+  "genome": [
+    {
+      "gate": "RZ",
+      "q": 2,
+      "feature": 3,
+      "scale": 0.5
+    },
+    {
+      "gate": "CZ",
+      "q": 3,
+      "target": 1
+    },
+    {
+      "gate": "RY",
+      "q": 3,
+      "feature": 3,
+      "scale": 0.5
+    },
+    {
+      "gate": "CNOT",
+      "q": 1,
+      "target": 0
+    },
+    {
+      "gate": "RZ",
+      "q": 1,
+      "feature": 2,
+      "scale": 0.5
+    },
+    {
+      "gate": "RZ",
+      "q": 1,
+      "feature": 2,
+      "scale": 1.0
+    },
+    {
+      "gate": "RY",
+      "q": 0,
+      "feature": 3,
+      "scale": 0.5
+    },
+    {
+      "gate": "RX",
+      "q": 1,
+      "feature": 0,
+      "scale": 1.0
+    }
+  ],
+  "selection_metrics": {
+    "validation_accuracy": 0.9385964912280702,
+    "validation_balanced_accuracy": 0.9265873015873016,
+    "validation_f1_macro": 0.9329805996472662,
+    "validation_class0_precision": 0.9487179487179487,
+    "validation_class0_recall": 0.8809523809523809,
+    "validation_class1_recall": 0.9722222222222222,
+    "validation_malignant_precision": 0.9487179487179487,
+    "validation_malignant_recall": 0.8809523809523809,
+    "validation_benign_recall": 0.9722222222222222,
+    "gate_count": 12,
+    "single_qubit_gate_count": 10,
+    "two_qubit_gate_count": 2,
+    "estimated_depth": 6,
+    "validation_selection_score": 0.9297839506172839,
+    "fitness": 0.9297839506172839,
+    "mode": "performance",
+    "best_validation_balanced_accuracy_seen": 0.9265873015873016,
+    "validation_balanced_accuracy_loss_from_best": 0.0,
+    "accuracy_constraint_tolerance": 0.02,
+    "accuracy_constraint_applicable": false,
+    "accuracy_constraint_met": null,
+    "selection_rule": "highest 0.5*validation balanced accuracy + 0.5*validation macro-F1",
+    "candidate_budget_nominal": 64,
+    "candidate_budget_unit": "nominal_population_slots",
+    "candidate_attempt_budget_nominal": 64,
+    "candidate_attempts": 64,
+    "candidate_unique_budget_target": 50,
+    "matched_to_model": "",
+    "unique_budget_matched": true,
+    "unique_candidates_evaluated": 50,
+    "search_elapsed_seconds": 24.786184135824442
+  },
+  "complexity": {
+    "gate_count": 12,
+    "single_qubit_gate_count": 10,
+    "two_qubit_gate_count": 2,
+    "estimated_depth": 6
+  },
+  "outer_test_used_during_selection": false,
+  "fitness_definition": "highest 0.5*validation balanced accuracy + 0.5*validation macro-F1",
+  "candidate_budget_nominal": 64,
+  "candidate_attempt_budget_nominal": 64,
+  "candidate_attempt_safety_cap": null,
+  "candidate_attempts": 64,
+  "candidate_unique_budget_target": 50,
+  "unique_candidates_evaluated": 50,
+  "matched_to_model": "",
+  "unique_budget_matched": true,
+  "search_elapsed_seconds": 24.786184135824442,
+  "accuracy_constraint_tolerance": 0.02,
+  "accuracy_constraint_met": null
+}

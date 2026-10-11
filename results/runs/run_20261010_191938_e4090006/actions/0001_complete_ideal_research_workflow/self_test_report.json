@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-10-10T19:19:38",
+  "script_version": "8.2-qiskit-circuit-pdf-paper-audit",
+  "tests_passed": 15,
+  "tests_total": 15,
+  "tests": [
+    {
+      "test": "qiskit_rx_unitary",
+      "passed": true
+    },
+    {
+      "test": "qiskit_ry_unitary",
+      "passed": true
+    },
+    {
+      "test": "qiskit_rz_unitary",
+      "passed": true
+    },
+    {
+      "test": "qiskit_h_unitary",
+      "passed": true
+    },
+    {
+      "test": "qiskit_cx_circuit_unitary",
+      "passed": true
+    },
+    {
+      "test": "qiskit_feature_map_returns_normalized_states",
+      "passed": true
+    },
+    {
+      "test": "qiskit_batch_wrapper_matches_scalar_statevector",
+      "passed": true
+    },
+    {
+      "test": "evolved_qiskit_circuit_returns_normalized_states",
+      "passed": true
+    },
+    {
+      "test": "fidelity_kernel_symmetric",
+      "passed": true
+    },
+    {
+      "test": "fidelity_kernel_diagonal_one",
+      "passed": true
+    },
+    {
+      "test": "fidelity_kernel_bounded",
+      "passed": true
+    },
+    {
+      "test": "finite_shot_matrix_symmetric",
+      "passed": true
+    },
+    {
+      "test": "finite_shot_diagonal_one",
+      "passed": true
+    },
+    {
+      "test": "genome_complexity_matches_qiskit_structure",
+      "passed": true
+    },
+    {
+      "test": "circuit_builder_returns_quantum_circuit",
+      "passed": true
+    }
+  ],
+  "remote_jobs_submitted": 0,
+  "simulation_engine": "Qiskit Statevector"
+}

@@ -1,0 +1,84 @@
+{
+  "repeat": 2,
+  "fold": 5,
+  "mode": "performance",
+  "search_seed": 52400,
+  "genome": [
+    {
+      "gate": "RZ",
+      "q": 1,
+      "feature": 0,
+      "scale": 0.5
+    },
+    {
+      "gate": "RZ",
+      "q": 3,
+      "feature": 1,
+      "scale": 0.5
+    },
+    {
+      "gate": "RZ",
+      "q": 2,
+      "feature": 1,
+      "scale": 1.0
+    },
+    {
+      "gate": "RX",
+      "q": 3,
+      "feature": 1,
+      "scale": 2.0
+    }
+  ],
+  "selection_metrics": {
+    "validation_accuracy": 0.9444444444444444,
+    "validation_balanced_accuracy": 0.9583333333333333,
+    "validation_f1_macro": 0.939799331103679,
+    "validation_class0_precision": 0.8571428571428571,
+    "validation_class0_recall": 1.0,
+    "validation_class1_recall": 0.9166666666666666,
+    "validation_malignant_precision": 0.8571428571428571,
+    "validation_malignant_recall": 1.0,
+    "validation_benign_recall": 0.9166666666666666,
+    "gate_count": 8,
+    "single_qubit_gate_count": 8,
+    "two_qubit_gate_count": 0,
+    "estimated_depth": 3,
+    "validation_selection_score": 0.9490663322185061,
+    "fitness": 0.9490663322185061,
+    "mode": "performance",
+    "best_validation_balanced_accuracy_seen": 0.9583333333333333,
+    "validation_balanced_accuracy_loss_from_best": 0.0,
+    "accuracy_constraint_tolerance": 0.02,
+    "accuracy_constraint_applicable": false,
+    "accuracy_constraint_met": null,
+    "selection_rule": "highest 0.5*validation balanced accuracy + 0.5*validation macro-F1",
+    "candidate_budget_nominal": 64,
+    "candidate_budget_unit": "nominal_population_slots",
+    "candidate_attempt_budget_nominal": 64,
+    "candidate_attempts": 64,
+    "candidate_unique_budget_target": 48,
+    "matched_to_model": "",
+    "unique_budget_matched": true,
+    "unique_candidates_evaluated": 48,
+    "search_elapsed_seconds": 10.60818226635456
+  },
+  "complexity": {
+    "gate_count": 8,
+    "single_qubit_gate_count": 8,
+    "two_qubit_gate_count": 0,
+    "estimated_depth": 3
+  },
+  "outer_test_used_during_selection": false,
+  "fitness_definition": "highest 0.5*validation balanced accuracy + 0.5*validation macro-F1",
+  "candidate_budget_nominal": 64,
+  "candidate_attempt_budget_nominal": 64,
+  "candidate_attempt_safety_cap": null,
+  "candidate_attempts": 64,
+  "candidate_unique_budget_target": 48,
+  "unique_candidates_evaluated": 48,
+  "matched_to_model": "",
+  "unique_budget_matched": true,
+  "search_elapsed_seconds": 10.60818226635456,
+  "accuracy_constraint_tolerance": 0.02,
+  "accuracy_constraint_met": null
+}
