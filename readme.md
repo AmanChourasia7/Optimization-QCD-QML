@@ -1,6 +1,6 @@
 # Optimization of Quantum Circuit Designs Using QML
 
-A Python and Qiskit project that uses evolutionary search to optimize four-qubit quantum kernel circuits for binary classification. The study compares genetic algorithms, random search, and classical ML baselines across six datasets.
+A Python and Qiskit project that uses evolutionary search to optimize four-qubit quantum kernel circuits for binary classification. The study compares genetic algorithms, random search, and classical ML baselines across six datasets. This project:
 
 - Searches circuit structures with performance-focused and complexity-aware genetic algorithms.
 - Compares both genetic algorithm objectives with budget-matched random search.
